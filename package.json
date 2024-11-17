@@ -1,0 +1,33 @@
+{
+  "name": "fastscraper",
+  "version": "1.0.0",
+  "description": "Fast web scraper for nodeJS.",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lm260/fastscraper.git"
+  },
+  "keywords": [
+    "scraper",
+    "fastscraper",
+    "nodejs"
+  ],
+  "author": "Lm Only",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lm260/fastscraper/issues"
+  },
+  "homepage": "https://github.com/Lm260/fastscraper#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "qs": "^6.13.0",
+    "undici": "five"
+  }
+}

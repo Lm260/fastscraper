@@ -1,0 +1,7 @@
+'use strict';
+const fastscraper = require('../lib/index.js');
+
+fastscraper.instagram('Angel shipu phonk')
+    .then(console.log)
+    .catch(console.error);
+    
