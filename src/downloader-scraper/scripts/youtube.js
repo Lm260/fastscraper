@@ -45,13 +45,11 @@ async function download(type, url) {
         const data = await fetchJson(`https://ab.cococococ.com/ajax/download.php?format=${type}&url=${encodeURIComponent(url)}`, {
             cache: 'no-store',
         });
-        console.log(data);
         if (!data.success)
             throw new Error('Download failed');
         let download = null;
         while (true) {
             const result = await progress(data.id);
-            console.log(result);
             if (result.text === 'Video Unavailable') 
                 break;
             if (result.progress >= 1000 && result.text === 'Finished') {
