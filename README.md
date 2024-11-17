@@ -1,9 +1,31 @@
 # FastScraper
 Fast web scraper for nodeJS.
 
-Um simples Web scraper para seus projetos nodejs com suporte para CommonJS. 
+Um simples Web Scraper para seus projetos NodeJS com suporte para CommonJS. 
 
-### Exemplo de uso:
+### Instalação
+
+**Clonar repositório**
+
+```sh
+git clone https://github.com/Lm260/fastscraper
+```
+> Ou baixe o arquivo em formato ZIP. [Baixar](https://github.com/Lm260/fastscraper/archive/refs/heads/main.zip)
+------------------
+
+Instalar dependências
+
+```sh
+npm i
+```
+
+Modo teste
+
+```sh
+npm test
+```
+
+### Exemplo de uso
 
 **Importando o módulo**
 
@@ -27,7 +49,7 @@ console.log(googleimg); //Array<images>
 
 ```js
 //commonjs
-const tiktokdl = fastscraper.tiktok('https://vm.tiktok.com/ZMhtfdnEr/');
+const tiktokdl = await fastscraper.tiktok('https://vm.tiktok.com/ZMhtfdnEr/');
 
 //output
 console.log(tiktokdl); //Object<Audio e Video>
@@ -38,7 +60,7 @@ console.log(tiktokdl); //Object<Audio e Video>
 
 ```js
 //commonjs
-const ytsv = fastscraper.youtubeVideoSearch('Hutao Genshin impact');
+const ytsv = await fastscraper.youtubeVideoSearch('Hutao Genshin impact');
 
 //output
 console.log(ytsv); //Object > Array<results>
@@ -50,6 +72,14 @@ console.log(ytsv); //Object > Array<results>
 - **Dependências:** Poucas dependências instaladas;
 - **Desempenho** Rápido em requisições e processamento de dados;
 - **Suporte** Para qualquer problema ou sugestão, entre em contato. [Whatsapp](https://chat.whatsapp.com/CMcAAljSWZhHWyssMJFCp8)
+
+### Dependências
+
+| Modulo          | Versão
+| :----------------- | :------------------------- | 
+| cheerio            | 1.0.0
+| qs               | 6.13.0
+| undici            | 6.21.0
 
 ## Outros
 * [__`Downloaders`__](./src/downloader-scraper/scripts)
