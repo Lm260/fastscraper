@@ -1,6 +1,6 @@
 {
   "name": "fastscraper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast web scraper for nodeJS.",
   "main": "lib/index.js",
   "directories": {

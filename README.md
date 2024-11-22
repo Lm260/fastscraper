@@ -5,13 +5,9 @@ Um simples Web Scraper para seus projetos NodeJS com suporte para CommonJS.
 
 ### Instalação
 
-**Clonar repositório**
-
 ```sh
-git clone https://github.com/Lm260/fastscraper
+npm i fastscraper
 ```
-> Ou baixe o arquivo em formato ZIP. [Baixar](https://github.com/Lm260/fastscraper/archive/refs/heads/main.zip)
-------------------
 
 Instalar dependências
 
@@ -60,7 +56,7 @@ console.log(tiktokdl); //Object<Audio e Video>
 
 ```js
 //commonjs
-const ytsv = await fastscraper.youtubeVideoSearch('Hutao Genshin impact');
+const ytsv = await fastscraper.yts('Hutao Genshin impact');
 
 //output
 console.log(ytsv); //Object > Array<results>
